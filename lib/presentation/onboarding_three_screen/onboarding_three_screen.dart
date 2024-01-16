@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kamran_zafar_s_application1/core/app_export.dart';
+import 'package:kamran_zafar_s_application1/presentation/onboarding_four_screen/onboarding_four_screen.dart';
+import 'package:kamran_zafar_s_application1/presentation/sign_in_active_state_screen/sign_in_active_state_screen.dart';
 import 'package:kamran_zafar_s_application1/widgets/app_bar/appbar_subtitle_one.dart';
 import 'package:kamran_zafar_s_application1/widgets/app_bar/custom_app_bar.dart';
 import 'package:kamran_zafar_s_application1/widgets/custom_elevated_button.dart';
@@ -77,12 +79,26 @@ class OnboardingThreeScreen extends StatelessWidget {
               CustomElevatedButton(
                 height: 56.v,
                 text: "Get Started",
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => OnboardingFourScreen()),
+                  );
+                },
                 buttonStyle: CustomButtonStyles.fillPrimaryTL12,
               ),
               SizedBox(height: 8.v),
               CustomElevatedButton(
                 height: 56.v,
                 text: "Sign in",
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => SignInActiveStateScreen()),
+                  );
+                },
                 buttonStyle: CustomButtonStyles.fillPrimaryContainerTL12,
                 buttonTextStyle: CustomTextStyles.titleMediumOpenSansPrimary,
               ),
