@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kamran_zafar_s_application1/core/app_export.dart';
+import 'package:kamran_zafar_s_application1/presentation/home_page/home_page.dart';
+import 'package:kamran_zafar_s_application1/presentation/sign_up_active_state_right_password_screen/sign_up_active_state_right_password_screen.dart';
 import 'package:kamran_zafar_s_application1/widgets/app_bar/appbar_leading_image.dart';
 import 'package:kamran_zafar_s_application1/widgets/app_bar/custom_app_bar.dart';
 import 'package:kamran_zafar_s_application1/widgets/custom_elevated_button.dart';
@@ -207,8 +209,13 @@ class SignInActiveStateScreen extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 CustomElevatedButton(
-                  text: "Login",
-                ),
+                    text: "Login",
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      );
+                    }),
                 SizedBox(height: 27.v),
                 RichText(
                   text: TextSpan(
@@ -220,14 +227,25 @@ class SignInActiveStateScreen extends StatelessWidget {
                       TextSpan(
                         text: " ",
                       ),
-                      TextSpan(
-                        text: "Sign Up",
-                        style: CustomTextStyles.titleMediumPrimary_1,
-                      ),
+                      // TextSpan(
+                      //   text: "Sign Up",
+                      //   style: CustomTextStyles.titleMediumPrimary_1,
+                      // ),
                     ],
                   ),
                   textAlign: TextAlign.left,
                 ),
+                CustomElevatedButton(
+                    text: "Sigunp",
+                    buttonStyle: CustomButtonStyles.none,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                SignUpActiveStateRightPasswordScreen()),
+                      );
+                    }),
               ],
             ),
           ),

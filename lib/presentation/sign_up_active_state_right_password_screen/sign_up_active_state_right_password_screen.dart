@@ -83,10 +83,11 @@ class SignUpActiveStateRightPasswordScreen extends StatelessWidget {
                           TextSpan(
                             text: " ",
                           ),
-                          TextSpan(
-                            text: "Sign In",
-                            style: CustomTextStyles.titleMediumPrimary_1,
-                          ),
+                          // TextSpan(
+                          //   text: "Sign In",
+
+                          //   style: CustomTextStyles.titleMediumPrimary_1,
+                          // ),
                         ],
                       ),
                       textAlign: TextAlign.left,
