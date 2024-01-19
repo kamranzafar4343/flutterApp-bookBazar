@@ -77,8 +77,7 @@ class OnboardingFourScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>
-                            SignUpActiveStateRightPasswordScreen()),
+                        builder: (context) => SignInActiveStateScreen()),
                   );
                 },
                 buttonStyle: CustomButtonStyles.fillPrimaryTL12,
