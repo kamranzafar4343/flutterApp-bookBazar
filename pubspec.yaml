@@ -14,13 +14,18 @@ dependencies:
   carousel_slider: ^4.2.1
   intl: ^0.18.0
 dev_dependencies: 
+  flutter_native_splash: ^2.3.7
   flutter_test: 
     sdk: flutter
+
+flutter_native_splash:
+  image: assets2/bazar.png,
+  # color: "0xFF54408C"
+
 flutter: 
   uses-material-design: true
   assets: 
     - assets/
-    - assets/images/
   fonts: 
     - family: Roboto
       fonts: 

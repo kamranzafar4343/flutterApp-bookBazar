@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kamran_zafar_s_application1/core/app_export.dart';
 import 'package:kamran_zafar_s_application1/presentation/onboarding_two_screen/onboarding_two_screen.dart';
 
-class SpashScreen extends StatelessWidget {
+class _SpashScreenState extends State<SpashScreen> 
+with SingleTickerProviderStateMixin {
+  @override
+  void initState() {
+    super.initState();
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
+  }
+
   const SpashScreen({Key? key})
       : super(
           key: key,
